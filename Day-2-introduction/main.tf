@@ -1,6 +1,8 @@
 resource "aws_instance" "name" {
-    ami = "ami-052064a798f08f0d3"
+    ami = "ami-07860a2d7eb515d9a"
     instance_type = "t2.micro"
-    key_name = "test-key"
+    tags = {
+        Name = "MyFirstInstance"
+    }
   
 }
